@@ -1,12 +1,11 @@
 import { UmbEntryPointOnInit } from '@umbraco-cms/backoffice/extension-api';
-export const onInit: UmbEntryPointOnInit = (_host, _extensionRegistry) => {
+import { manifests as dashboardManifests } from './Dashboards/manifests.ts';
 
-    console.log('Hello from warren.github.template.v03');
-
+// load up the manifests here
+export const onInit: UmbEntryPointOnInit = (_host, extensionRegistry) => {
     // We can register many manifests at once via code 
     // as opposed to a long umbraco-package.json file
-    // _extensionRegistry.registerMany([
-    //     ...entityActionManifests,
-    //     ...modalManifests
-    // ]);
+    extensionRegistry.registerMany([
+        ...dashboardManifests
+    ]);
 };
