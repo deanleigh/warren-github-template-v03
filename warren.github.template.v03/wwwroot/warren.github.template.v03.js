@@ -6,7 +6,7 @@ const n = {
     label: "Dashboard for Dean",
     pathname: "/dashboard-dean"
   },
-  js: () => import("./dashboard.chart.element-BeqqXL3w.js"),
+  js: () => import("./dashboard.chart.element-FxHDcKCS.js"),
   conditions: [
     {
       alias: "Umb.Condition.SectionAlias",
